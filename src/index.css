@@ -1,13 +1,84 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  width: 96vw;
+  height: 96vh;
+  margin: 2vh 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cellRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.cellBoard {
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cell {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.controls {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #eee;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin: 15px;
+}
+
+.controls .button {
+  background-color: #fff;
+  padding: 5px 10px;
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 20px;
+  }
+  .controls .button {
+    font-size: 15px;
+    padding: 3px 5px;
+    margin: 4px;
+  }
 }

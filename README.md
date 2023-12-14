@@ -7,7 +7,7 @@ Minesweeper game using ReactJS
 1. Clone the repository
 
 ```bash
-git clone https://github.com/kushaangowda/Image_Colorization.git
+git clone https://github.com/kushaangowda/minesweeper.git
 ```
 
 2. Install the dependencies

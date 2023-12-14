@@ -43,7 +43,11 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cell.closed:hover {
   cursor: pointer;
+  background-color: #00de00 !important;
 }
 
 .controls {

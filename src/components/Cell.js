@@ -3,12 +3,12 @@ import { FaBomb } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 import { IoGolf } from "react-icons/io5";
 
-function Cell({ status, value, handleClick, startCell, handleRightClick }) {
+function Cell({ status, value, handleClick, startCell, handleRightClick, startCellVal }) {
   const colors = ["black", "green", "red", "brown", "orange", "blue", "purple", "maroon"];
 
   return (
     <div
-      className="cell"
+      className={"cell" + ((startCellVal[0] === -1 && status !== 1) || startCell ? " closed" : "")}
       style={{
         backgroundColor: status === 1 ? "#e3e5e9" : "green",
         color: value !== -1 ? colors[value] : "black",

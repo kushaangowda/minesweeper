@@ -191,6 +191,7 @@ function Board({ mode, numCellsPerRow, numCellsPerColumn, setNumFlags, numFlags 
                   handleRightClick(i, j);
                 }}
                 startCell={startCell[0] === i && startCell[1] === j}
+                startCellVal={startCell}
               />
             ))}
           </div>
